@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cloud Service Application</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<link rel="stylesheet" href="stylesheets/style.css" />
+</head>
+<body>
+<h1 id = "message">Assignment 1</h1>
+	<div>
+
+			<form action="/upload" method="post" enctype = "multipart/form-data">
+                <fieldset>
+                    <legend ><h1 class="blue2">Upload</h1></legend>
+					 Upload file: <input type="file" name="file" value="file" class="blue">
+					 <br> <br>
+					 <input type="submit" id="sub1" value="submit" class='description'>
+                </fieldset>
+			</form>
+
+	</div>
+<div>
+	<br>
+	<br>
+</div>
+    <div>
+
+				<form action="/download" method="get" enctype = "multipart/form-data">
+                    <fieldset>
+                    <legend ><h1 class="blue2">Download</h1></legend>
+					Download file: <input type="text" name="dwnfile">
+					<br> <br>
+					 <input type="submit" id="sub2" value="submit" class='description'>
+                     </fieldset>
+				</form>
+	</div>
+<div>
+	<br>
+	<br>
+</div>
+    <div>
+
+
+				<form action="/list1" method="post" enctype = "multipart/form-data">
+                     <fieldset>
+                    <legend ><h1 class="blue2">List</h1></legend>
+					List all the files : <input type="submit" class='description'>
+					<br> <br>
+                     </fieldset>
+				</form>
+	</div>
+<div>
+	<br>
+	<br>
+</div>
+    <div>
+
+				<form action="/delete" method="get" enctype = "multipart/form-data">
+                     <fieldset>
+                    <legend ><h1 class="blue2">Delete</h1></legend>
+					Which file should be Deleted:<input type="text" name="delfile" >
+					<br> <br>
+					<input type="submit" id=" sub1" value="submit" class='description'>
+                     </fieldset>
+                </form>
+	</div>
+</body>
+</html>
